@@ -13,20 +13,16 @@
 # Requirements:
 #  - zsh: https://www.zsh.org/
 
-plugin_dir=$(dirname "${0}":A)
-
-# shellcheck source=/dev/null
-source "${plugin_dir}"/src/helpers/messages.zsh
-
-PACKAGE_NAME='pazi'
+PAZI_PACKAGE_NAME='pazi'
 
 function pazi::install {
-    message_info "Installing ${PACKAGE_NAME}"
+    message_info "Installing ${PAZI_PACKAGE_NAME}"
     if [ -x "$(command which cargo)" ]; then
-        cargo install "${PACKAGE_NAME}"
+        cargo install "${PAZI_PACKAGE_NAME}"
     else
         message_error "Please install cargo"
     fi
+    message_success "Installed ${PAZI_PACKAGE_NAME}"
 }
 
 function pazi::init {
