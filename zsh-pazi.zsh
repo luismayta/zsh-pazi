@@ -16,13 +16,13 @@
 PAZI_PACKAGE_NAME='pazi'
 
 function pazi::install {
-    message_info "Installing ${PAZI_PACKAGE_NAME}"
-    if type -p cargo > /dev/null; then
-        cargo install "${PAZI_PACKAGE_NAME}"
-        message_success "Installed ${PAZI_PACKAGE_NAME}"
-    else
-        message_error "Please install cargo or luismayta/zsh-rust"
+    if ! type -p cargo > /dev/null; then
+        message_warning "Please install cargo or luismayta/zsh-rust"
+        return
     fi
+    message_info "Installing ${PAZI_PACKAGE_NAME}"
+    cargo install "${PAZI_PACKAGE_NAME}"
+    message_success "Installed ${PAZI_PACKAGE_NAME}"
 }
 
 function pazi::init {
