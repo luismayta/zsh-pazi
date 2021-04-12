@@ -7,34 +7,15 @@
 # Authors:
 #   Luis Mayta <slovacus@gmail.com>
 #
-# Search shell pazi
-# https://github.com/luismayta/zsh-pazi
-#
-# Requirements:
-#  - zsh: https://www.zsh.org/
 
-PAZI_PACKAGE_NAME='pazi'
+# shellcheck disable=SC2034  # Unused variables left for readability
+ZSH_PAZI_PATH=$(dirname "${0}")
 
-function pazi::install {
-    if ! type -p cargo > /dev/null; then
-        message_warning "Please install cargo or luismayta/zsh-rust"
-        return
-    fi
-    message_info "Installing ${PAZI_PACKAGE_NAME}"
-    cargo install "${PAZI_PACKAGE_NAME}"
-    message_success "Installed ${PAZI_PACKAGE_NAME}"
-}
+# shellcheck source=/dev/null
+source "${ZSH_PAZI_PATH}"/config/main.zsh
 
-function pazi::init {
-    eval "$(pazi init zsh)"
-}
+# shellcheck source=/dev/null
+source "${ZSH_PAZI_PATH}"/internal/main.zsh
 
-function pazi::load {
-    if type -p pazi > /dev/null; then
-        pazi::init
-    fi
-}
-
-pazi::load
-
-if ! type -p pazi > /dev/null; then pazi::install; fi
+# shellcheck source=/dev/null
+source "${ZSH_PAZI_PATH}"/pkg/main.zsh
