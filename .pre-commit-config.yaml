@@ -91,7 +91,7 @@ repos:
         additional_dependencies:
           - black
   - repo: https://github.com/IamTheFij/docker-pre-commit
-    rev: v2.0.0
+    rev: v2.0.1
     hooks:
       - id: docker-compose-check
   - repo: https://github.com/hadenlabs/pre-commit-hooks
