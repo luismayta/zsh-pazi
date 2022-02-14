@@ -200,11 +200,11 @@
         },
         "bridgecrew": {
             "hashes": [
-                "sha256:7c3a64106d42e61080a91718315e43ada8fec07b3d870420343c30467e4ff6b8",
-                "sha256:a82d14d88f8cdd38fb23a261259e831998269c5fc9988b5b4b4eb1f216ebda72"
+                "sha256:6c79a378cd7402acc8ce471314b09c138c2ce2f65dab163b385acd01d4400388",
+                "sha256:8afb64a639159d7200f6cd784f9df516f4fda2475dab0012dcd4d85a8f6c2563"
             ],
             "index": "pypi",
-            "version": "==2.0.833"
+            "version": "==2.0.836"
         },
         "bump2version": {
             "hashes": [
@@ -317,11 +317,11 @@
         },
         "checkov": {
             "hashes": [
-                "sha256:cd222e72bcc17666da5e69915448cbf33631a91f8cb92596ce4fa89d5ce840e8",
-                "sha256:e9bfa36a982eb592ff199f8505bfc250fec81779e6b2d6c35c6cc1d7c2e8042e"
+                "sha256:7ab42d13043f5901fa5ffd127ca43fdc7ac1e008e331f03a0daa0a0d4191d99b",
+                "sha256:c8a020933d628a212bb3dcf01a56ccd9c48283722f492ae4a27e2f516fa3cad6"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==2.0.833"
+            "version": "==2.0.836"
         },
         "click": {
             "hashes": [
@@ -336,7 +336,7 @@
                 "sha256:9653a2297357335d7325a1827e71ac1245d91c97d959346a7decabd4a52d5354",
                 "sha256:a6e924f3c46b657feb5b72679f7e930f8e5b224b766ab35c91ae4019b4e0615e"
             ],
-            "markers": "python_version >= '3.6' and python_version < '4.0'",
+            "markers": "python_version >= '3.6' and python_version < '4'",
             "version": "==0.5.3"
         },
         "cloudsplaining": {
@@ -402,7 +402,7 @@
                 "sha256:ba7297148c0f3a72ed3395495080be86a344539084f9d4df9c0f3b466e4f6e54",
                 "sha256:ea2d5393a3de4a347e9c99c6c59efe4e3f64da2fb48e80f3e350fee289fa8a73"
             ],
-            "markers": "python_version >= '3.6' and python_version < '4.0'",
+            "markers": "python_version >= '3.6' and python_version < '4'",
             "version": "==0.12.3"
         },
         "decorator": {
@@ -1452,7 +1452,7 @@
                 "sha256:000ca7f471a233c2251c6c7023ee85305721bfdf18621ebff4fd17a8653427ed",
                 "sha256:0e7c33d9a63e7ddfcb86780aac87befc2fbddf46c58dbb487e0855f7ceec283c"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
             "version": "==1.26.8"
         },
         "virtualenv": {
