@@ -50,7 +50,7 @@
     "lint-staged": "^15.2.9",
     "prettier": "^3.2.5",
     "prettier-tslint": "^0.4.2",
-    "rimraf": "^5.0.5",
+    "rimraf": "^5.0.10",
     "semantic-release": "^23.0.2",
     "shelljs": "^0.8.5",
     "stylelint": "^16.2.1",
